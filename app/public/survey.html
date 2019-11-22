@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -78,7 +79,7 @@
                 <div class="form-group">
                     <label for="question">
                         <h3><strong>Question 1</strong></h3>
-                        Your mind is always buzzing with unexplored ideas and plans
+                        You perfer to "go with the flow" rather than sticking to a plan
                     </label>
                     <select class="form-control" id="question1">
                         <option>1 (strongly agree)</option>
@@ -104,7 +105,7 @@
                 <div class="form-group">
                     <label for="question">
                         <h3><strong>Question 3</strong></h3>
-                        You find it easy to stay relaxed and focused even when there is some pressure.
+                        You tend to do your best work under pressure
                     </label>
                     <select class="form-control" id="question3">
                         <option>1 (strongly agree)</option>
@@ -117,7 +118,7 @@
                 <div class="form-group">
                     <label for="question">
                         <h3><strong>Question 4</strong></h3>
-                        You rarely do something just out of sheer curiosity.
+                        You are a risk taker
 
                     </label>
                     <select class="form-control" id="question4">
@@ -173,7 +174,7 @@
                 <div class="form-group">
                     <label for="question">
                         <h3><strong>Question 8</strong></h3>
-                        In a discussion, truth should be more important than people’s sensitivities.
+                        Telling white lies to protect the feelings of others is acceptible if the truth is hurtful
 
                     </label>
                     <select class="form-control" id="question8">
@@ -211,7 +212,7 @@
                         <option>5 (strongly disagree)</option>
                     </select>
                 </div>
-                <input class="btn btn-success" type="submit" value="Find Your Best Match">
+                <input class="btn btn-success" id="submit" type="submit" value="Find Your Best Match">
             </form>
         </form>
     </div>
@@ -230,3 +231,46 @@
 </body>
 
 </html>
+
+<script type="text/javascript">
+$("#submit").on("click", function(event){
+    event.preventDefault();
+
+    var surveyResult = [
+    $(".form-control").change(function(){
+        var selection = $(this).find("option:selected").text();
+        console.log(surveyResult);
+    })
+    ]
+
+    function createNewFriend () {
+    friendName = $("#name").val.trim(),
+    friendPhoto = $("#photo").val.trim(),
+    surveyResult = surveyResult }
+    
+    console.log(newFriend);
+    $.post("/api/friends", newFriend,
+        function(data) {
+            if (data) {
+                return newFriend.friendName
+            }
+    
+            console.log(data);
+
+
+
+        });
+
+
+
+
+
+
+});
+
+
+
+
+
+
+</script>

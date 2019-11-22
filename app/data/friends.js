@@ -1,35 +1,3 @@
-// var QuestionsArray = [
-// {   question: "...",
-//     choices: [1, 2, 3, 4, 5]
-//     },
-// {   question: "...",
-//     choices: [1, 2, 3, 4, 5]
-//     },
-// {   question: "...",
-//     choices: [1, 2, 3, 4, 5]
-//     },
-// {   question: "...",
-//     choices: [1, 2, 3, 4, 5]
-//     },
-// {   question: "...",
-//     choices: [1, 2, 3, 4, 5]
-//     },
-// {   question: "...",
-//     choices: [1, 2, 3, 4, 5]
-//     },
-// {   question: "...",
-//     choices: [1, 2, 3, 4, 5]
-//     }
-// {   question: "...",
-//     choices: [1, 2, 3, 4, 5]
-//     },
-// {   question: "...",
-//     choices: [1, 2, 3, 4, 5]
-//     },
-// {   question: "...",
-//     choices: [1, 2, 3, 4, 5]
-//     },
-// ];
 
 var friendsArray = [
 {   name: "Leah K",
@@ -48,5 +16,5 @@ var friendsArray = [
 ]
 
 module.exports = friendsArray; 
-//module.exports = questionsArray;
+
 

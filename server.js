@@ -2,8 +2,10 @@
 var express = require("express");
 var path = require("path");
 
+
 // express server
 var app = express();
+
 // inital port
 var PORT = process.env.PORT || 3000;
 
@@ -11,13 +13,12 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-
 // router
 app.get("/", function(req, res){
-  res.json("hshhshshsh")
+  //res.json("hshhshshsh")
 })
-//require("./routes/apiRoutes")(app);
-//require("./routes/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 // listener
 app.listen(PORT, function() {
